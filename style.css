@@ -1,0 +1,295 @@
+@font-face {
+    font-family: 'oswald';
+    src: url('Oswald/static/Oswald-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'oswald-light';
+    src: url('Oswald/static/Oswald-ExtraLight.ttf') format('truetype');
+}
+
+
+@font-face {
+    font-family: 'octarine';
+    src: url('octarine.bold.otf') format ('truetype');
+}
+
+.mainBackground {
+    background-color: white;
+    transition: all 0.5s ease;
+}
+
+h1 {
+    position: absolute;
+    opacity: 0;
+    font-family: oswald;
+    font-size: 230px;
+    color: white;
+    transition: opacity 4s ease, left 1s ease, filter 0.4s ease;
+    left: 150%;
+    filter: blur(0);
+}
+
+h2 {
+    font-family: oswald-light;
+    font-size: 20px;
+    color: white;
+    margin-left: -40px;
+    margin-bottom: 0px;
+    margin-top: 30%;
+    opacity: 0;
+    transition: all 1s ease-in-out, filter 0.4s ease;
+
+}
+
+h3 {
+    color: black;
+    font-family: oswald-light;
+    font-size : 21px;
+    transition : all 1s ease;
+    z-index: 10;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+h5 {
+    font-family: oswald-light;
+    font-size: 90%;
+    color: black;
+    margin-bottom: 5px;
+    transition: all 0.5s ease-in-out;
+}
+
+
+/*page intro */
+.animeIntro {
+    width: 20px;
+    height: 20px;
+    background-color: #FFC95A;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    left: 50%;
+    top: 110%;
+    z-index: 10;
+    transition: top 0.8s ease-in-out, width 0.4s ease, height 0.4s ease;
+
+}
+
+.imgDepart {
+    transition: all 0.5s ease-in-out;
+    border-radius: 50%;
+    width: 3%;
+    position: absolute;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    border: solid;
+
+}
+
+.centered-element {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    width: 25%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.5s ease-in-out;
+    z-index: 7;
+    opacity: 0.9; 
+    border-radius: 30px;
+}
+
+.icon {
+    width: 30%;
+    transition: all 0.5s ease-in-out;
+}
+
+/*Page 2*/
+.square {
+    width: 5px;
+    height: 50px;
+    margin: 10px;
+    position: absolute;
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+    z-index: 3;
+
+}
+
+.rect {
+    width: 50px;
+    height: 5px;
+    margin: 10px;
+    position: absolute;
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+    z-index: 3;
+
+}
+
+.semi-circle {
+    margin: 10px;
+    opacity: 1;
+    position: absolute;
+    transition: all 1s ease-in-out;
+    z-index: 4;
+}
+
+.largeSquare {
+    margin: 10px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+
+}
+
+.bauhausLetters {
+    font-size: 300px;
+    font-family: 'octarine';
+    position: absolute;
+    color: black;
+    margin: 0px;
+    opacity: 0;
+    transition: opacity 3s ease-out;
+}
+
+/*Menu animation et formes: */
+.menu {
+    background-color: #FFC95A;
+    opacity: 0;
+    z-index: 10;
+    position: absolute;
+    left : 96%;
+    top : 15%;
+    transform: translate(-50%);
+    border-radius: 30px;
+    width: 4%;
+    height: 4vw;
+    transition: all 1s ease;
+}
+
+.iconePlus {
+    position : relative;
+    transition: all 1s ease;
+    opacity: 1;
+    width: 100%;
+}
+.hideIcone {
+    transition: all 1s ease-out;
+    opacity: 0;
+    position : absolute; 
+    top : 10%;
+    left: 12%;
+
+}
+
+.explicationContenair {
+    background-color: #FFC95A;
+    opacity: 0;
+    z-index: 9;
+    position: absolute;
+    left : 82%;
+    top : 23%;
+    transform: translate(-50%);
+    border-radius: 30px;
+    width: 330px;
+    height: 470px;
+    transition: all 1s ease;
+
+}
+
+.transition {
+    position: absolute;
+    top : 0px;
+    left: 0px;
+    height :110vh;
+    width : 0%;
+    background-color: black;
+    transition: all 1s ease;
+    z-index: 10;
+}
+
+.deTransition {
+    position: absolute;
+    top : 0px;
+    left: 0px;
+    height :110vh;
+    width : 100%;
+    background-color: black;
+    transition: all 1s ease;
+    z-index: 10;
+}
+
+.iconePage {
+    width: 2.5vw;
+    height: 2.5vw;
+    border-radius: 50px;
+    opacity: 1;
+    position : absolute;
+    transition: all 1s ease;
+    z-index: 10;
+    left: 19%;
+    top : 75%;
+    display: none;
+}
+
+
+
+
+/*Page 1*/
+.circleBack{
+    opacity : 0.5;
+    border-radius: 150px;
+    transition: all 2s ease;
+    position: absolute;
+    background-color: #030051;
+    z-index: 0;
+}
+
+.circle{
+    opacity : 0;
+    border-radius: 150px;
+    transition: all 1s ease;
+    position: absolute;
+    z-index: 1;
+}
+
+
+.cursor-halo {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: radial-gradient(circle, #FFEB80, transparent);
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    transition: transform 0.1s ease;
+    z-index: 10;
+}
+
+/*Page 3*/
+.oneSecondAnime {   
+    transition: all 1s ease-in-out;
+}
+
+.twoSecondAnime {   
+    transition: all 2s ease-in-out;
+}
+
+.speed{
+    font-size: 20px;
+    position: absolute;
+    top: 530px;
+    left: 810px;
+    color: #43F2AC;
+    font-family: oswald-light;
+}
+
+.smooth-animation {
+    transition: all 0.5s ease-in-out; 
+}
+
