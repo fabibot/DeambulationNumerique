@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <title> time</title>
+    <script src="scriptIcone.js"> </script>
+    <script src="scriptPage3.js"> </script>
+</head>
+
+<body style="background-color: black;">
+    <div id=contenair class="centered-element" style="background-color: #43F2AC;">
+        <img id="icon" src="Images/click-gauche-Alfanz.png" alt="keyboard icon" class="icon" />
+        <h5 id=textIcon style="margin-top: 0px;">use the mouse</h5>
+    </div>
+
+    <div class="menu" id="menu">
+        <img class="iconePlus" src="Images/ajouter-gajah-mada.png" alt="more information icon" />
+        <img id="iconeCategorie" class="hideIcone" src="Images/categorie-Wahyu-Adam.png" alt="menu selection des pages"
+            style="width : 75%;" />
+        <img id="iconeQuestion" class="hideIcone" src="Images/question-Freepik.png"
+            alt="explaination of the project icon" style="width: 80%; height : 3vw;" />
+        <img id="iconePage1" class="iconePage" src="Images/abysse2.png" alt="icone page Abysse" />
+        <img id="iconePage2" class="iconePage" src="Images/bauhaus2.png" alt="icone page Bauhaus" />
+        <img id="iconePage3" class="iconePage" src="Images/time2.png" alt="icone page Temps" />
+        <img id="iconeRetour" class="iconePage" style="width:56%" src="Images/en-arriere-kmg-design.png"
+            alt="icone retour" />
+
+    </div>
+
+    <div id="explContenair" class="explicationContenair">
+        <h3> « Qu'est-ce donc que le temps ? Si personne ne me le demande, je le sais ; mais si on me le demande et que
+            je veuille l'expliquer, je ne le sais plus » disait Saint Augustin. Le
+            temps a-t-il une origine? Une fin? Est-il cyclique ou linéaire. Voilà, des débats qui ne
+            vieillissent
+            jamais. Déjà, dans la Grèce Antique, Aristote liait le temps avec le mouvement. Une pensée
+            philosophique qui, bien plus tard, prendra une ampleur scientifique.
+            <br> <br> Faites bouger le curseur pour accélérer la machine.
+        </h3>
+
+    </div>
+
+    <svg width="100vw" height="100vh" xmlns="http://www.w3.org/2000/svg">
+        <line id="lineGauche1" x1="185px" y1="350px" x2="185px" y2="450px" stroke="#F2F7F7" stroke-width="3">
+            <animate attributeName="y1" values="345;385;345" dur="4s" repeatCount="indefinite" keyTimes="0;0.5;1" />
+            <animate attributeName="y2" values="465;415;465" dur="4s" repeatCount="indefinite" keyTimes="0;0.5;1" />
+        </line>
+        <line id="lineGauche2" class="twoSecondAnime" x1="200px" y1="330px" x2="200px" y2="410px" stroke="#F2F7F7"
+            stroke-width="3">
+            <animate attributeName="y1" values="330;380;330" dur="4s" repeatCount="indefinite" keyTimes="0;0.5;1" />
+            <animate attributeName="y2" values="470;420;470" dur="4s" repeatCount="indefinite" keyTimes="0;0.5;1" />
+        </line>
+
+
+        <circle id="grandCercle" cx="550px" cy="400px" r="220px" stroke="#F2F7F7" fill="transparent" stroke-width="3" />
+        <circle id="centreGrandCercle" cx="550px" cy="400px" r="40px" stroke="#F2F7F7" fill="#F2F7F7"
+            stroke-width="3" />
+        <circle id="intGrandCercle" cx="490px" cy="400px" r="6px" stroke="#F2F7F7" fill="#F2F7F7" stroke-width="3">
+            <animateTransform attributeName="transform" type="rotate" from="0 550 400" to="-360 550 400" dur="2s"
+                repeatCount="indefinite" />
+        </circle>
+        <circle cx="525px" cy="400px" r="15px" stroke="#F2F7F7" fill="black" stroke-width="3">
+            <animateTransform attributeName="transform" type="rotate" from="0 550 400" to="360 550 400" dur="2s"
+                repeatCount="indefinite" />
+        </circle>
+        <path id="animePath" d="M550 165 A235 235 0 0 1 785 400 " stroke="#F2F7F7" stroke-width="13" fill="transparent">
+            <animateTransform attributeName="transform" type="rotate" from="0 550 400" to="360 550 400" dur="8s"
+                repeatCount="indefinite" />
+        </path>
+
+
+        <circle id="cercleGauche" cx="250px" cy="200px" r="67px" stroke="#F2F7F7" fill="transparent" stroke-width="3" />
+        <g class="rotating-group">
+            <path d="M250 140 A60 60 0 0 1 310 200 L250 200 Z" stroke="#F2F7F7" stroke-width="3" fill="transparent">
+                <animateTransform attributeName="transform" type="rotate" from="0 250 200" to="-360 250 200" dur="4s"
+                    repeatCount="indefinite" />
+            </path>
+        </g>
+
+        <circle id="cercleDroit" cx="820px" cy="400px" r="100px" stroke="#F2F7F7" fill="transparent" stroke-width="3" />
+        <line x1="820px" y1="380px" x2="820px" y2=500 stroke="#F2F7F7" stroke-width="3">
+            <animateTransform attributeName="transform" type="rotate"
+                values="0 820 400; 90 820 400; 0 820 400; -90 820 400; 0 820 400" dur="5s" repeatCount="indefinite" />
+        </line>
+        <path d="M720 400 A100 100 0 0 0 920  400" stroke="#F2F7F7" fill="transparent" stroke-width="15" />
+        <circle cx="820" cy="500" r="7px" stroke="black" fill="black">
+            <animateTransform attributeName="transform" type="rotate"
+                values="0 820 400; 90 820 400; 0 820 400; -90 820 400; 0 820 400" dur="5s" repeatCount="indefinite" />
+        </circle>
+
+
+
+
+
+        <circle id="petitCercleDroit" cx="1000px" cy="400px" r="10px" stroke="#F2F7F7" fill="#F2F7F7" stroke-width="3">
+            <animate class="smooth-animation" attributeName="cx" values="1000;1200;1000" dur="4s"
+                repeatCount="indefinite" keyTimes="0;0.5;1" />
+        </circle>
+        <circle cx="1310px" cy="400px" r="5px" stroke="#F2F7F7" fill="transparent" stroke-width="2" />
+
+
+        <path d="M130 400 300 400 A250 250 0 0 1 550 150" stroke="#F2F7F7" stroke-width="3" fill="transparent" />
+        <path d="M550 650 A250 250 0 0 0 800 400 L1300 400" stroke="#F2F7F7" stroke-width="3" fill="transparent" />
+
+
+        <line x1="800px" y1="590px" x2="1000px" y2="590px" stroke="#43F2AC" stroke-width="3"></line>
+        <circle id="slider" cx="900px" cy="590" r="8px" fill="#43F2AC" />
+
+
+
+
+
+
+    </svg>
+    <p class="speed">speed</p>
+
+
+
+
+
+    <div id="transition" class="transition"></div>
+    <div id="deTransition" class="deTransition"></div>
+
+
+</body>
+
+</html>
