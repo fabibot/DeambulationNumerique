@@ -111,7 +111,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 iconeRetour.addEventListener("click", function () {
                     blockTransition.style.width = "100%";
                     setTimeout(function () {
-                        window.location.href = "gallery.html";
+                        window.location.href = "index.html";
                     }, 1000);
                 });
 
